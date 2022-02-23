@@ -1,0 +1,28 @@
+{
+  "root": "apps/admin-demon-e2e",
+  "sourceRoot": "apps/admin-demon-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/admin-demon-e2e/cypress.json",
+        "devServerTarget": "admin-demon:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "admin-demon:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/admin-demon-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["admin-demon"]
+}

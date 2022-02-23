@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": {
+    "admin": "apps/admin",
+    "admin-demon": "apps/admin-demon",
+    "admin-demon-e2e": "apps/admin-demon-e2e",
+    "admin-e2e": "apps/admin-e2e",
+    "admin-pro": "apps/admin-pro",
+    "admin-pro-e2e": "apps/admin-pro-e2e",
+    "public": "apps/public",
+    "public-e2e": "apps/public-e2e"
+  }
+}
